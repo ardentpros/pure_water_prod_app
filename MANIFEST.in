@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include pure_water_prod_app *.css
+recursive-include pure_water_prod_app *.csv
+recursive-include pure_water_prod_app *.html
+recursive-include pure_water_prod_app *.ico
+recursive-include pure_water_prod_app *.js
+recursive-include pure_water_prod_app *.json
+recursive-include pure_water_prod_app *.md
+recursive-include pure_water_prod_app *.png
+recursive-include pure_water_prod_app *.py
+recursive-include pure_water_prod_app *.svg
+recursive-include pure_water_prod_app *.txt
+recursive-exclude pure_water_prod_app *.pyc
