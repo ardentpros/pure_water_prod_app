@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:machine_no",
+ "creation": "2022-07-07 14:54:11.938336",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "machine_no",
+  "machine__status",
+  "date_purchased",
+  "column_break_4",
+  "assigned_operator",
+  "machine_capacityspeed",
+  "company",
+  "operating_costs_section",
+  "consumable_cost",
+  "wages",
+  "column_break_11",
+  "electricitydiesel_cost",
+  "rent_cost",
+  "working_hours_section",
+  "working_hours",
+  "maintenance_section_section",
+  "maintenance_cycle",
+  "column_break_18",
+  "power_rating"
+ ],
+ "fields": [
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Data",
+   "label": "Machine No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "machine__status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Machine  Status",
+   "options": "\nActive\nInActive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_purchased",
+   "fieldtype": "Date",
+   "label": "Date Purchased"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_operator",
+   "fieldtype": "Link",
+   "label": "Assigned Operator",
+   "options": "Operator"
+  },
+  {
+   "fieldname": "machine_capacityspeed",
+   "fieldtype": "Data",
+   "label": "Machine Capacity/Speed"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "operating_costs_section",
+   "fieldtype": "Section Break",
+   "label": "Operating Costs"
+  },
+  {
+   "fieldname": "consumable_cost",
+   "fieldtype": "Currency",
+   "label": "Consumable Cost"
+  },
+  {
+   "fieldname": "wages",
+   "fieldtype": "Currency",
+   "label": "Wages"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "electricitydiesel_cost",
+   "fieldtype": "Currency",
+   "label": "Electricity/Diesel Cost"
+  },
+  {
+   "fieldname": "rent_cost",
+   "fieldtype": "Currency",
+   "label": "Rent Cost"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "working_hours_section",
+   "fieldtype": "Section Break",
+   "label": "Working Hours Section"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Table",
+   "label": "Working Hours",
+   "options": "Machine Working Hours"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "maintenance_section_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance Section"
+  },
+  {
+   "fieldname": "maintenance_cycle",
+   "fieldtype": "Select",
+   "label": "Maintenance Cycle",
+   "options": "\nWeekly\nBiWeekly\nMonthly\nQuarterly\nYearly"
+  },
+  {
+   "fieldname": "power_rating",
+   "fieldtype": "Data",
+   "label": "Power Rating"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-07 15:25:41.760653",
+ "modified_by": "Administrator",
+ "module": "Pure Water Prod App",
+ "name": "Machine",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Manufacturing",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
