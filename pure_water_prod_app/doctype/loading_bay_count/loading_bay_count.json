@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:HOF-LDBY-{YY}-{#####}",
+ "creation": "2022-07-11 12:38:04.898628",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "loading_ticket_no",
+  "loading_ticket_cashier",
+  "loading_ticket_qty",
+  "column_break_4",
+  "customer_name",
+  "loading_ticket_datetime",
+  "loaded_qty",
+  "attach_images_section",
+  "picture_of_receipt",
+  "picture_of_empty_trunkbucket",
+  "loaded_by",
+  "column_break_12",
+  "picture_of_half_full_trunkbucket",
+  "picture_of_full_trunkbucket",
+  "inspected_and_verified_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "loading_ticket_no",
+   "fieldtype": "Data",
+   "label": "Loading Ticket No "
+  },
+  {
+   "fieldname": "loading_ticket_cashier",
+   "fieldtype": "Data",
+   "label": "Loading Ticket Cashier"
+  },
+  {
+   "fieldname": "loading_ticket_qty",
+   "fieldtype": "Data",
+   "label": "Loading Ticket Qty"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "loading_ticket_datetime",
+   "fieldtype": "Data",
+   "label": "Loading Ticket DateTime"
+  },
+  {
+   "fieldname": "loaded_qty",
+   "fieldtype": "Int",
+   "label": "Loaded Qty"
+  },
+  {
+   "fieldname": "attach_images_section",
+   "fieldtype": "Section Break",
+   "label": "Attach Images"
+  },
+  {
+   "fieldname": "picture_of_receipt",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Receipt "
+  },
+  {
+   "fieldname": "picture_of_empty_trunkbucket",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Empty Trunk/Bucket "
+  },
+  {
+   "fieldname": "loaded_by",
+   "fieldtype": "Data",
+   "label": "Loaded by"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "picture_of_half_full_trunkbucket",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Half Full Trunk/Bucket"
+  },
+  {
+   "fieldname": "picture_of_full_trunkbucket",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Full Trunk/Bucket"
+  },
+  {
+   "fieldname": "inspected_and_verified_by",
+   "fieldtype": "Data",
+   "label": "Inspected and Verified by"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Loading Bay Count",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-11 12:38:04.898628",
+ "modified_by": "Administrator",
+ "module": "Pure Water Prod App",
+ "name": "Loading Bay Count",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Manufacturing",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

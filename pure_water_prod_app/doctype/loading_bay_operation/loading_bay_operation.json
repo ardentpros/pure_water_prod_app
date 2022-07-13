@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LDBY-{YY}-{#####}",
+ "creation": "2022-07-11 12:38:04.898628",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fetch_the_loading_ticket_section",
+  "document_type",
+  "column_break_3",
+  "loading_ticket_no",
+  "button",
+  "loading_ticket_details_section",
+  "loading_ticket_cashier",
+  "loading_ticket_qty",
+  "column_break_4",
+  "customer_name",
+  "loading_ticket_datetime",
+  "loaded_qty",
+  "attach_images_section",
+  "picture_of_receipt",
+  "picture_of_empty_trunkbucket",
+  "loaded_by",
+  "column_break_12",
+  "picture_of_half_full_trunkbucket",
+  "picture_of_full_trunkbucket",
+  "inspected_and_verified_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "ACC-LTCKT-2022-#####",
+   "description": "Enter the last 6 digits on the loading ticket",
+   "fieldname": "loading_ticket_no",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Loading Ticket No ",
+   "options": "document_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "loading_ticket_cashier",
+   "fieldtype": "Read Only",
+   "label": "Loading Ticket Cashier"
+  },
+  {
+   "fieldname": "loading_ticket_qty",
+   "fieldtype": "Read Only",
+   "label": "Loading Ticket Qty"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "loading_ticket_datetime",
+   "fieldtype": "Read Only",
+   "label": "Loading Ticket DateTime"
+  },
+  {
+   "fieldname": "loaded_qty",
+   "fieldtype": "Int",
+   "label": "Loaded Qty",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "attach_images_section",
+   "fieldtype": "Section Break",
+   "label": "Attach Images"
+  },
+  {
+   "fieldname": "picture_of_receipt",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Loading Ticket ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "picture_of_empty_trunkbucket",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Empty Trunk/Bucket ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "loaded_by",
+   "fieldtype": "Read Only",
+   "label": "Loading Supervised by"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "picture_of_half_full_trunkbucket",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Half Full Trunk/Bucket",
+   "reqd": 1
+  },
+  {
+   "fieldname": "picture_of_full_trunkbucket",
+   "fieldtype": "Attach Image",
+   "label": "Picture of Full Trunk/Bucket",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspected_and_verified_by",
+   "fieldtype": "Read Only",
+   "label": "Inspected and Verified by"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Loading Bay Operation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "fetch_the_loading_ticket_section",
+   "fieldtype": "Section Break",
+   "label": "Fetch the Loading Ticket"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "button",
+   "fieldtype": "Button",
+   "label": "Fetch Loading Ticket"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "loading_ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Loading Ticket Details"
+  },
+  {
+   "default": "Sales Invoice",
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Document Type",
+   "options": "DocType"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-13 06:27:50.954863",
+ "modified_by": "Administrator",
+ "module": "Pure Water Prod App",
+ "name": "Loading Bay Operation",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Manufacturing",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

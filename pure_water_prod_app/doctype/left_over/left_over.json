@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LFO-{YY}-{MM}-{DD}-{#####}",
+ "creation": "2022-07-13 06:12:25.285922",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "document_type",
+  "column_break_3",
+  "material_request",
+  "section_break_5",
+  "machine_no",
+  "issued_weight",
+  "date",
+  "column_break_9",
+  "operator_name",
+  "left_over_weight",
+  "time",
+  "section_break_13",
+  "inventory_staff_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Material Request",
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Document Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "material_request",
+   "fieldtype": "Dynamic Link",
+   "label": "Material Request",
+   "options": "document_type"
+  },
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Link",
+   "label": "Machine No",
+   "options": "Machine"
+  },
+  {
+   "fieldname": "operator_name",
+   "fieldtype": "Data",
+   "label": "Operator Name"
+  },
+  {
+   "fieldname": "left_over_weight",
+   "fieldtype": "Int",
+   "label": "Left Over Weight"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date "
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "inventory_staff_name",
+   "fieldtype": "Data",
+   "label": "Inventory Staff Name"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issued_weight",
+   "fieldtype": "Int",
+   "label": "Issued Weight"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Left Over",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-13 06:17:38.691526",
+ "modified_by": "Administrator",
+ "module": "Pure Water Prod App",
+ "name": "Left Over",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}
